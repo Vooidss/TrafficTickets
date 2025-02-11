@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations/{application}
+
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    service-url:
+      defaultZone: http://discovery:8761/eureka
+
+server:
+  port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

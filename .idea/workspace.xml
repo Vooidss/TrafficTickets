@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae8336f9-6d19-48af-a6a3-6f1705ae53c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Controllers/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Controllers/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Converters/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Converters/ConvertObjectToJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Requests/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Requests/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Requests/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Requests/UpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Response/DefaultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/DTO/Response/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Exceptions/JwtGenerateTokenExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Models/BlackListTokens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Repositories/BlackListRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Repositories/UserRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/MyUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/RequestGenerateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/Services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/SpringBootSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/user/MyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/user/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/java/com/onlinestore/backend/util/PatternCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/src/test/java/com/onlinestore/backend/Services/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/authorization-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/authorization-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Config/JwtAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Config/KafkaConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Config/WebConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Controllers/AuthenticationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Controllers/RegistrationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Converters/Convert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Converters/ConvertObjectToJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Image/ImageDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Image/ImageDTOResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Image/TagDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/LikeDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/OrderPriceOfUserDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Requests/AuthenticationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Requests/RegisterRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Requests/Request.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Requests/UpdateRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Response/DefaultResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/DTO/Response/JwtAuthenticationResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Exceptions/JwtGenerateTokenExceptions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Kafka/KafkaConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Kafka/KafkaProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Models/BlackListTokens.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Models/UserImage/UserImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Models/UserImage/UserImageId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Repositories/BlackListRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Repositories/UserImageRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Repositories/UserRepositories.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/AuthenticationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/JwtService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/KafkaProducerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/MyUserDetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/RegistrationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/RequestGenerateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/Services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/SpringBootSecurityApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/user/MyUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/user/MyUserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/user/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/classes/com/onlinestore/backend/util/PatternCustom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/authorization/target/test-classes/com/onlinestore/backend/Services/UserServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/src/main/java/com/onlinestore/backend/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/configurations/authorization/authorization-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/configurations/authorization/authorization.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/com/onlinestore/backend/ConfigServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/authorization/authorization-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/authorization/authorization.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/basket/basket-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/basket/basket.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/order/order-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/order/order.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/pin/pin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/products/products-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/classes/configurations/products/products.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/config-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/config-server-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/src/main/java/com/onlinestore/backend/DiscoveryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/classes/com/onlinestore/backend/DiscoveryApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/discovery-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/discovery-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/src/main/java/com/onlinestore/backend/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/src/test/java/ru/vooidss/configServer/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/classes/com/onlinestore/backend/GatewayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/gateway-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/gateway-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/orders.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Configs/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Controllers/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Controllers/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Converters/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Converters/ConvertImageToMultipartFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Converters/ConvertMultipartFileToByteArrayResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Converters/ConvertObjectToJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Request/ImageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Request/QuestionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Request/TicketRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Response/DefaultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Response/GetAllTicketsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Response/GetObjectResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/DTO/Response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Hashing/Hashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Hashing/HashingNameImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Models/Answers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Models/Questions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Models/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Repositories/AnswerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Repositories/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Repositories/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Services/AnswerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Services/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/Services/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/java/com/tickets/TicketsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/src/test/java/com/tickets/TicketsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Configs/WebConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Controllers/QuestionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Controllers/TicketController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Converters/Convert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Converters/ConvertImageToMultipartFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Converters/ConvertMultipartFileToByteArrayResources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Converters/ConvertObjectToJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Request/ImageRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Request/QuestionRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Request/TicketRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/DefaultResponse$DefaultResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/DefaultResponse$DefaultResponseBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/DefaultResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetAllTicketsResponse$GetAllTicketsResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetAllTicketsResponse$GetAllTicketsResponseBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetAllTicketsResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetObjectResponse$GetObjectResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetObjectResponse$GetObjectResponseBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/GetObjectResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/DTO/Response/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Hashing/Hashing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Hashing/HashingNameImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Answers$AnswersBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Answers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Questions$QuestionsBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Questions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Ticket$TicketBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Models/Ticket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Repositories/AnswerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Repositories/QuestionRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Repositories/TicketRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Services/AnswerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Services/QuestionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/Services/TicketService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tickets/target/classes/com/tickets/TicketsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="1371" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2srJLMtopGBkF1CDYCtiqC4EgbQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Егор/WebstormProjects/TrafficTickets/frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "D:\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Егор\WebstormProjects\TrafficTickets\frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Егор\WebstormProjects\TrafficTickets\frontend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="Android" type="ReactNative" factoryName="React Native">
+      <working-dir value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <react-native value="$PROJECT_DIR$/node_modules/react-native" />
+      <platform value="ANDROID" />
+      <envs />
+      <only-packager />
+      <method v="2">
+        <option name="ReactNativePackager" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae8336f9-6d19-48af-a6a3-6f1705ae53c8" name="Changes" comment="" />
+      <created>1739207703196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739207703196</updated>
+      <workItem from="1739207704346" duration="1450000" />
+      <workItem from="1739275770694" duration="615000" />
+      <workItem from="1739299881082" duration="21000" />
+      <workItem from="1739299902914" duration="709000" />
+      <workItem from="1739301957750" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
