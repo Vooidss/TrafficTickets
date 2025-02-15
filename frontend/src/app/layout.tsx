@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
-import "../scss/globals.css";
+import "../scss/_globals.scss";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
@@ -17,7 +17,9 @@ export default function RootLayout({
       <html lang="en">
           <body>
           <Header/>
+          <main>
               {children}
+          </main>
           </body>
       </html>
   );

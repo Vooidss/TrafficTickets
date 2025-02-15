@@ -1,9 +1,11 @@
 import ListQuestions from "@/components/ListQuestions";
+import { TicketService } from "@/service/ticket.service";
 
-export default function Home() {
-  return (
-      <main>
-          <ListQuestions/>
-      </main>
-  );
-}
+const Home = async () => {
+    const tickets = await TicketService.getAll();
+    return(
+        <ListQuestions tickets={tickets || []} />
+    )
+};
+
+export default Home;

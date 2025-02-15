@@ -1,9 +1,9 @@
-import {Questions} from "@/interfaces/question.interface";
+import {Question} from "@/interfaces/question.interface";
 
 export interface Ticket{
     id:number,
     countQuestions:number,
-    questions:Questions[]
+    questions:Question[]
 }
 
 export interface TicketsData{

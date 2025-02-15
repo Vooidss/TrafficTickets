@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -38,6 +39,7 @@ public class TicketService {
 
     public ResponseEntity<Response> getAllTickets() {
         List<Ticket> tickets = ticketRepository.findAll();
+        tickets.sort(Comparator.comparing(Ticket::getId));
 
         return ResponseEntity.ok().body(
                 GetAllTicketsResponse.builder()

@@ -3,3 +3,8 @@ export interface Answer{
     answer:string,
     isCorrect:boolean
 }
+
+export interface AnswerData{
+    answer:Answer,
+    index:number
+}

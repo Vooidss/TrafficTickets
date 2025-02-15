@@ -1,0 +1,70 @@
+@use '_colors.scss' as color;
+
+@mixin box-style{
+  &__num{
+    color: #000000;
+  }
+
+  &{
+    box-shadow: 0px 0px 20px 9px rgba(34, 60, 80, 0.2);
+
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+  }
+
+  &:hover{
+    box-shadow: 0px 0px 20px 9px rgba(57, 106, 168, 0.24);
+    cursor: pointer;
+    background: color.$mainColorHover;
+  }
+}
+
+.module{
+  user-select: none;
+  background: white;
+  box-shadow: 0px 0px 20px 9px rgba(34, 60, 80, 0.2);
+  height: 400px;
+  width: 50%;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  &__box{
+    @include box-style;
+    &{background: color.$mainColor;}
+  }
+
+  &__boxTrue{
+    @include box-style;
+    &{background: green;}
+
+    &:hover{
+      background: #00ff00;
+      box-shadow: 0px 0px 20px 9px rgba(0, 128, 0, 0.4);
+    }
+
+  }
+
+  &__boxFalse{
+    @include box-style;
+    &{background: rgb(196, 2, 2);}
+
+
+    &:hover{
+      box-shadow: 0px 0px 20px 9px rgba(255, 0, 0, 0.2);
+      background: rgb(196, 2, 2);
+    }
+  }
+
+
+
+}

@@ -1,21 +1,17 @@
 import axios from "axios";
 import {Ticket} from "@/interfaces/ticket.interface";
 
-const API_URL = 'http://localhost:4200/tickets';
-
-axios.defaults.baseURL = API_URL;
+axios.defaults.baseURL = process.env.API_TICKETS_URL;
 
 export const TicketService = {
     async getAll(){
         const {data} = await axios.get<Ticket[]>('get/all');
-        return data;
+        // @ts-ignore
+        return data.tickets;
     },
     async getById(id:string){
-        const {data} = await axios.get<Ticket[]>('/get',{
-            params: {
-                id,
-            },
-        })
-        return data[0];
+        const {data} = await axios.get<Ticket[]>(`/get/${id}`)
+        // @ts-ignore
+        return data.ticket;
     }
 }

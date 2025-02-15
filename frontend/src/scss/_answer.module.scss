@@ -1,0 +1,37 @@
+@use '_colors.scss' as color;
+
+@mixin answer{
+  width: 80%;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.answers{
+
+  width: 100%;
+
+  &__answer{
+    @include answer;
+
+    background: color.$questionElementColor;
+
+    &:hover{
+      background: color.$questionElementColorHover;
+      cursor: pointer;
+    }
+
+  }
+
+  &__answerTrue{
+    @include answer;
+    background: greenyellow;
+  }
+  &__answerFalse{
+    @include answer;
+
+    background: red;
+
+  }
+
+
+}
