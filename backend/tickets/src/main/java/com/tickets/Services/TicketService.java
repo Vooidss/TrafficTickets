@@ -1,6 +1,7 @@
 package com.tickets.Services;
 
 import com.tickets.DTO.Request.TicketRequest;
+import com.tickets.DTO.Request.TicketsRequest;
 import com.tickets.DTO.Response.DefaultResponse;
 import com.tickets.DTO.Response.GetAllTicketsResponse;
 import com.tickets.DTO.Response.GetObjectResponse;
@@ -13,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -53,11 +55,24 @@ public class TicketService {
     }
 
     @Transactional
-    public ResponseEntity<Response> addTicket(TicketRequest ticketRequest) {
-        try {
-            Ticket ticket = ticketRepository.save(ticketRequest.getTicket());
+    protected Ticket save(Ticket ticket){
+        Ticket result = ticketRepository.save(ticket);
 
-            if(ticket.getCountQuestions() != ticket.getQuestions().size()){
+        if(ticket.getCountQuestions() != ticket.getQuestions().size()){
+            return null;
+        }
+
+        questionService.save(ticket);
+        return result;
+    }
+
+    @Transactional
+    public ResponseEntity<Response> addTicket(Ticket ticketRequest) {
+        try {
+
+            Ticket ticket = save(ticketRequest);
+
+            if(ticket == null){
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(DefaultResponse.builder()
                         .status(HttpStatus.BAD_REQUEST)
                         .code(HttpStatus.BAD_REQUEST.value())
@@ -78,5 +93,26 @@ public class TicketService {
                         .message("Чиназес")
                 .build());
 
+    }
+
+    @Transactional
+    public ResponseEntity<Response> addTicketSeveral(TicketsRequest ticketsRequest) {
+
+        for(Ticket ticket : ticketsRequest.getTickets()){
+              Ticket result = save(ticket);
+              if(result == null){
+                  return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(DefaultResponse.builder()
+                          .status(HttpStatus.BAD_REQUEST)
+                          .code(HttpStatus.BAD_REQUEST.value())
+                          .message(String.format("В билете номер %d дожлно быть %d вопросов в билете. Отправлено: %d",result.getId(),result.getCountQuestions(),result.getQuestions().size()))
+                          .build());
+              }
+        }
+
+        return ResponseEntity.ok().body(DefaultResponse.builder()
+                .status(HttpStatus.OK)
+                .code(HttpStatus.OK.value())
+                .message("Все билеты успешно добавлены")
+                .build());
     }
 }

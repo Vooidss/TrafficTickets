@@ -1,6 +1,7 @@
 package com.tickets.Controllers;
 
 import com.tickets.DTO.Request.TicketRequest;
+import com.tickets.DTO.Request.TicketsRequest;
 import com.tickets.DTO.Response.Response;
 import com.tickets.Services.TicketService;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,12 @@ public class TicketController {
 
     @PostMapping("/add")
     public ResponseEntity<Response> addTicket(@RequestBody TicketRequest ticketRequest){
-        return ticketService.addTicket(ticketRequest);
+        return ticketService.addTicket(ticketRequest.getTicket());
+    }
+
+    @PostMapping("/addSeveral")
+    public ResponseEntity<Response> addTicket(@RequestBody TicketsRequest ticketsRequest){
+        return ticketService.addTicketSeveral(ticketsRequest);
     }
 
 }
