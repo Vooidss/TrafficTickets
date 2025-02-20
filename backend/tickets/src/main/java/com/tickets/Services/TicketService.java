@@ -44,7 +44,7 @@ public class TicketService {
         return ResponseEntity.ok().body(
                 GetAllTicketsResponse.builder()
                         .tickets(tickets)
-                        .message("Все билеты успещно возвращены")
+                        .message("Все билеты успещно возвращены") 
                         .status(HttpStatus.OK)
                         .code(HttpStatus.OK.value())
                         .build()
@@ -78,9 +78,5 @@ public class TicketService {
                         .message("Чиназес")
                 .build());
 
-    }
-
-    protected Ticket findById(Long id) {
-        return ticketRepository.findById(id).orElseThrow();
     }
 }

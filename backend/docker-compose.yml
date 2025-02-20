@@ -1,0 +1,100 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: TrafficTickets
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres_user" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5433:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - backend
+    depends_on:
+      - postgres
+
+
+  discovery:
+    build:
+      context: ./discovery
+    container_name: discovery
+    ports:
+      - "8761:8761"
+    networks:
+      - backend
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  gateway:
+    build:
+      context: ./gateway
+    container_name: gateway
+    ports:
+      - "8091:8091"
+    networks:
+      - backend
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8091/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  tickets:
+    build:
+      context: ./tickets
+    container_name: tickets
+    restart: on-failure
+    ports:
+      - "8010:8010"
+    networks:
+      - backend
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      DATABASE_URL: 'jdbc:postgresql://postgres:5432/TrafficTickets'
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: admin
+    depends_on:
+      postgres:
+        condition: service_healthy
+      discovery:
+        condition: service_started
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  postgres_data: {}
+  postgres: {}
+  tickets: {}
+  discovery: {}
+  config-server: {}
+  gateway: {}
+  pgadmin_data: {}

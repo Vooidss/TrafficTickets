@@ -18,5 +18,4 @@ export interface QuestionsDataSingle{
 export interface QuestionItemProps {
     index: number;
     currentNumberQuestion:number;
-    setCurrentNumberQuestion: (index: number) => void;
 }

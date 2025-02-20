@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: authorization
+  config:
+    import: 'optional:configserver:'
+  cloud:
+    config:
+      uri: http://localhost:8888
+      profile:
+

@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    template:
+      default-topic: authorization
+    bootstrap-servers: kafka:29092
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    service-url:
+      defaultZone: http://discovery:8761/eureka
+
+server:
+  port:
+    8060
+
+
+token:
+  signing:
+    key: ${TOKEN-SIGNING-KEY}

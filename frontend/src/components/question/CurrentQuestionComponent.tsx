@@ -1,16 +1,17 @@
 'use client'
 
-import {FC, useState} from "react";
+import {FC} from "react";
 import {QuestionsDataSingle} from "@/interfaces/question.interface";
-import AnswerItem from "@/ui/asnwer/AnswerItem";
 import AnswerComponent from "@/components/AnswerComponent";
+import {CurrentNumberQuestionInterface} from "@/interfaces/currentNumberQuestion.interface";
 
-const CurrentQuestionComponent:FC<QuestionsDataSingle> = ({question}) =>{
+const CurrentQuestionComponent:FC<QuestionsDataSingle & CurrentNumberQuestionInterface>
+    = ({question,setCurrentNumberQuestion,currentNumberQuestion,countQuestions}) =>{
 
     return(
         <div>
             <span>{question.question}</span>
-            <AnswerComponent question={question}/>
+            <AnswerComponent setCurrentNumberQuestion={setCurrentNumberQuestion} currentNumberQuestion={currentNumberQuestion} countQuestions={countQuestions} question={question}/>
         </div>
     )
 }

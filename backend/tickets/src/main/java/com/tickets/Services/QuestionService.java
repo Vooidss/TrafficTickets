@@ -40,7 +40,7 @@ public class QuestionService {
     private final ConvertImageToMultipartFile convertImageToMultipartFile;
 
     @Transactional
-    protected void save(Ticket ticket){
+    public void save(Ticket ticket){
         for (Questions q : ticket.getQuestions()) {
             q.setTicket(ticket);
             Questions question = questionRepository.save(q);

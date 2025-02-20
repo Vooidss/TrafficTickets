@@ -6,5 +6,6 @@ export interface Answer{
 
 export interface AnswerData{
     answer:Answer,
-    index:number
+    index:number,
+    questionIndex:number
 }

@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/Linterest'
+    username: postgres
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    template:
+      default-topic: authorization
+    bootstrap-servers: localhost:9092
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port:
+    8060
+
+token:
+  signing:
+    key: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
