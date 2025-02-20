@@ -66,6 +66,56 @@ services:
       timeout: 10s
       retries: 5
 
+  config-server:
+    build:
+      context: ./config-server
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    networks:
+      - backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: dev, native
+      DATABASE_URL: 'jdbc:postgresql://postgres:5432/TrafficTickets'
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: admin
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8888/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  authorization:
+    build:
+      context: ./authorization
+    container_name: authorization
+    restart: on-failure
+    depends_on:
+      postgres:
+        condition: service_healthy
+      discovery:
+        condition: service_started
+      config-server:
+        condition: service_started
+    ports:
+      - "8060:8060"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      DATABASE_URL: 'jdbc:postgresql://postgres:5432/TrafficTickets'
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: admin
+      TOKEN-SIGNING-KEY: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
+    networks:
+      - backend
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8060/actuator/health" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   tickets:
     build:
       context: ./tickets
