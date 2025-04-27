@@ -33,7 +33,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Егор/WebstormProjects/TrafficTickets/backend",
+    "last_opened_file_path": "D:/javaprojects/TrafficTickets/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +116,7 @@
       <workItem from="1739301957750" duration="8000" />
       <workItem from="1740088175461" duration="205000" />
       <workItem from="1740088552887" duration="15000" />
+      <workItem from="1745774470979" duration="20000" />
     </task>
     <servers />
   </component>
